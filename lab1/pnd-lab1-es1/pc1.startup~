@@ -1,2 +1,0 @@
-ip addr flush eth0
-rm /etc/resolv.conf
