@@ -1,4 +1,0 @@
-- pc1 should be configured using the interfaces file
-- pc2 should be configured using the ip command
-- the default gateway is the r1 machine (already set up)
-- the DNS server can be the server used by the host machine (this has to be set in all the pc of the lab)
