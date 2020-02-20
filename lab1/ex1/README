@@ -5,6 +5,8 @@ The assignment is: to manually configure pc1 and pc2 in order to be in the same 
 
 - pc2 should be configured using the ip command
 
+- pc3 should be configured using the ifconfig command
+
 - the default gateway is the r1 machine (already set up)
 
 - the DNS server can be the server used by the host machine (this has
