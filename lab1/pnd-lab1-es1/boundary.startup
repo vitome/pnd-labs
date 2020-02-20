@@ -1,0 +1,6 @@
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sysctl net.ipv4.ip_forward=1
+dpkg --install /root/*.deb
+ip addr flush eth1
+ip addr add 192.168.10.17/29 dev eth1
+udhcpd -f /etc/udhcpd.conf eth1

@@ -1,0 +1,4 @@
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+sysctl net.ipv4.ip_forward=1
+apt-get install -y udhcpd
+ip addr flush eth1
