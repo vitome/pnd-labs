@@ -1,17 +1,20 @@
-LAB_DESCRIPTION="Two lan, both with 2 pc and one router. Then, a border gateway. The assignment is: to configure the 4 pc and the three router so that the two lans are reachable and all can reach the Internet. More info in the README file."
-A local lan with 2 pcs, a default gateway that also operates as a DHCP
-server.
-The assignment is: to manually configure r1 to act as DHCP server and
-the 2 pcs to request an IP address from it.
+Two lan, both with 2 pc and one router. Then, another lan that joins
+the two routers with a border gateway (r0).  The assignment is: to
+configure the 4 pc and the three routers so that the two lans are
+reachable and all can reach the Internet.
 
-- r1 is set up with the IP address 192.168.100.30/28. It should use
-  the network 192.168.100.16/28 as the address pool
+- You have to use the 172.16.0.0/16 network and assign subnetworks to
+  all the LANs in the topology. Think about the most suitable approach.
+
+- r0 has to be the default gateway of the whole network. It is already
+  set up to act as the default gateway. It is connected to the
+  internet via eth0.
+
+- r1 and r2 have to be the default gateways for "lan1" and "lan2",
+  respectively. They have to have a default route towards r0 and
+  static routes to reach lan1 or lan2.
 
 - the DNS server can be the server used by the host machine (this has
-  to be set in all the pc of the lab)
+  to be set in all the pcs of the lab)
 
-- the default gateway is r1
-
-- pc1 should be configured using the interfaces file
-
-- pc2 should be configured using the dhclient command
+- the PCs can be configured as you prefer
