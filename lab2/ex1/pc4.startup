@@ -1,1 +1,3 @@
+ip -6 addr add 2001:DB8:0:2::104/64 dev eth0 
 
+ip -6 route add ::/0 via 2001:db8:0:2::1 dev eth0
