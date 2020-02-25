@@ -1,6 +1,5 @@
 One router with two lan, both with 2 pcs. The assignment is: to
-configure the topology to use staic IPv6 addresses. More info in the
-README file.
+configure the topology to use staic IPv6 addresses. 
 
 You have to provide static GUA addresses to the machines in the topology.
 
