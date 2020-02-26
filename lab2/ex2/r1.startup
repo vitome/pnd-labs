@@ -1,0 +1,4 @@
+dpkg -i radvd_1%3a2.15-2_amd64.deb
+radvd -l /var/log/radvd.log
+ifup eth0
+ifup eth1
