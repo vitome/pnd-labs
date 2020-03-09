@@ -8,7 +8,12 @@ and to properly set up the pc configurations.
 
 - lan must have the subnet 2001:DB8:FEDE:1::/64
  
-- pc1 and pc2 must obtain the address via SLAAC
+- pc1 and pc2 must obtain the address via SLAAC and the DNS+domain
+  info via stateless DHCPv6
+
+- pc1 has to use dibbler-client
+
+- pc2 has to use dhclient 
 
 - the router has always 1 in the host part of its own address 
   even in its local-link address.
