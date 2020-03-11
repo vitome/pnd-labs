@@ -18,3 +18,6 @@ in the lab.conf OR in a priviledged container.
 - pc4 has to use the privacy extension in order to make it use
   temporary addresses. Set up a short lifetime in order to see multiple 
   addresses. 
+
+- router r1 is already set up. You only have to turn on the radvd server
+  to capture the router advertisement packets. See the r1.startup file.
