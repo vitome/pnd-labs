@@ -1,0 +1,10 @@
+A lan with a host, a server, a router and the attacker machine.
+In the attacker machine you have to install ettercap and perform
+a MITM attack. Ettercap does this with the ARP poisoning
+This must be done with the --privileged option of kathara lstart (a bit rough...).
+
+- Set up the links as for ex1, so that the victim machine can be the hosting box
+
+- Verify the arp poisoning is effective
+
+- Try to use the filter for images already in the a1 folder to alter the image

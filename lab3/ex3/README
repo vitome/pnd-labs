@@ -1,0 +1,4 @@
+A lan with a host, a server and a router. Compile the thc toolkit and
+play with the tools.
+If you join the network from the hosting box, you can also monitor
+the traffic with wireshark.
