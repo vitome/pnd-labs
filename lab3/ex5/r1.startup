@@ -1,0 +1,9 @@
+
+echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+apt install -y dibbler-server radvd
+ifdown eth0
+ifup eth0
+ifdown eth1
+ifup eth1
+radvd -m logfile -l /var/log/radvd.log
+dibbler-server start

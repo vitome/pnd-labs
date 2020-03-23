@@ -1,0 +1,22 @@
+iface eth0 inet6 manual
+iface eth0 inet6 static
+  address 2001:DB8:FEDE:1::1
+  netmask 64
+  autoconf 0
+  accept_ra 0
+
+iface eth0 inet6 static
+  address fe80::1
+  netmask 64
+
+iface eth1 inet6 manual
+iface eth1 inet6 static
+  address 2001:DB8:FEDE:2::1
+  netmask 64
+  autoconf 0
+  accept_ra 0
+
+iface eth1 inet6 static
+  address fe80::1
+  netmask 64
+
