@@ -1,0 +1,6 @@
+ip addr add 192.168.100.80/24 dev eth0
+
+echo nameserver 8.8.8.8 > /etc/resolv.conf
+
+/etc/init.d/apache2 start
+

@@ -1,0 +1,4 @@
+ip addr flush eth0
+dhclient eth0
+
+
