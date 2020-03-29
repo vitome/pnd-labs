@@ -14,7 +14,8 @@ Your security policy is as follows:
   can initiate connections to internal lan, on any port.
 
 2.Everyone, including the Internet, can access Web (both ports) and mail
-  in DMZ. However, no host in DMZ can initiate connections anywhere else.
+  in DMZ to access their main functions and for ping. However, no host in
+  DMZ can initiate connections anywhere else.
 
 3.Internal users can access the Web servers and mail servers in DMZ via SSH,
   too. They can alsouse SSH to hosts on the Internet. However, hosts in
