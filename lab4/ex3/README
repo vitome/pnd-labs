@@ -1,4 +1,4 @@
-An internal lan with some hosts (pc1 192.168.100.1, 2001:db8:cafe:1::10),
+An internal lan with some hosts (pc1 192.168.100.10, 2001:db8:cafe:1::10),
 a DMZ (203.0.113.0/24, 2001:db8:cafe:2::/64) with two servers,
 a router (192.168.100.1, 2001:db8:cafe:1, 203.0.113.1, 2001:db8:cafe:2::1,
   198.51.100.29/24, 2001:db8:beef:1::29/64).
