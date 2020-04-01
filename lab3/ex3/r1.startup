@@ -1,5 +1,6 @@
-ip addr add 192.168.100.1/24 dev eth0
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
-
-echo "nameserver 8.8.8.8" > /etc/resolv.conf
-
+echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+apt install -y dibbler-server radvd
+ifdown eth0
+ifup eth0
+radvd -m logfile -l /var/log/radvd.log
+dibbler-server start

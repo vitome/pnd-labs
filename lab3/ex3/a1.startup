@@ -1,0 +1,4 @@
+apt-get install -y libpcap-dev libssl-dev libnetfilter-queue-dev
+ip addr add 2001:db8:fede:1::a1/64 dev eth0
+ip route add default fe80::1 dev eth0
+

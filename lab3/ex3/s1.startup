@@ -1,6 +1,5 @@
-ip addr add 192.168.100.80/24 dev eth0
-
-echo nameserver 8.8.8.8 > /etc/resolv.conf
+ip addr add 2001:db8:fede:1::80/64 dev eth0
+ip -6 route add default fe80::1/64 dev eth0
 
 apt update
 apt install -y php  libapache2-mod-php
