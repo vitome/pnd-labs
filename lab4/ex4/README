@@ -6,9 +6,7 @@ configure the router to act NAT and regulation.
 
 - r1 has also to accept ICMP echo replies destined to LAN
 
-- r1 has to drop ICMP echo request to itself
-
-- r1 has to accept SSH only to itself
+- r1 has to drop any packet to itself from eth1, but ICMP requests
 
 - r1 has to respond with TCP RST or ICMP Unreachable for incoming
   requests for blocked ports

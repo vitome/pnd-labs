@@ -1,0 +1,7 @@
+ip addr flush eth0
+umount /etc/resolv.conf
+dhclient eth0
+
+adduser user --disabled-login --quiet --gecos ""
+echo "user:password" | chpasswd
+/etc/init.d/ssh start

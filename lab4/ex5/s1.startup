@@ -1,0 +1,8 @@
+ip link set eth0 address 00:60:08:11:CE:4E 
+umount /etc/resolv.conf
+dhclient eth0
+
+a2enmod ssl
+echo "ServerName 192.168.10.18" | tee /etc/apache2/conf-available/fqdn.conf
+a2enconf fqdn
+/etc/init.d/apache2 restart
