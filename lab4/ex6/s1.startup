@@ -1,0 +1,11 @@
+ip addr add 192.168.10.2/29 dev eth0
+
+a2enmod ssl
+echo "ServerName 192.168.10.2" | tee /etc/apache2/conf-available/fqdn.conf
+a2enconf fqdn
+/etc/init.d/apache2 restart
+
+
+adduser user --disabled-login --quiet --gecos ""
+echo "user:password" | chpasswd
+/etc/init.d/ssh start

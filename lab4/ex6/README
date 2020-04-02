@@ -1,0 +1,18 @@
+Two lans with 1 server each, sharing the default gateway. The assignment is
+to properly configure the router to act NAT and regulation, making
+possible to access the internal servers from the "outside" (namely
+the IP address of the firewall).
+
+- Unrestricted internet access from all the machines in the lanA and lanB
+
+- Use NAT to redirect incoming traffic from WAN to the all the services
+  (SSH HTTP and HTTPS)
+
+- port 22 and 80 and 443 -> to s1
+
+- port 2222 and 8080 and 8088 -> to s2
+
+- Accept ICMP echo response also for both the lans
+
+- Respond with TCP RST or ICMP Unreachable for incoming requests for
+  blocked ports

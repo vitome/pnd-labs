@@ -1,0 +1,5 @@
+ip addr add 192.168.10.1/29 dev eth0
+ip addr add 192.168.10.17/29 dev eth1
+
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+
