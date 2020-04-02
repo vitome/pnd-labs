@@ -1,4 +1,4 @@
-ip link set eth0 address 02:42:ac:2d:00:04 1
+ip link set eth0 address 02:42:ac:2d:00:04
 umount /etc/resolv.conf
 dhclient eth0
 
