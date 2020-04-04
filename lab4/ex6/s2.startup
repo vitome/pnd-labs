@@ -1,4 +1,5 @@
 ip addr add 192.168.10.18/29 dev eth0
+ip route add default via 192.168.10.17
 
 a2enmod ssl
 echo "ServerName 192.168.10.18" | tee /etc/apache2/conf-available/fqdn.conf
