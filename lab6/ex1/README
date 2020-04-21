@@ -1,0 +1,5 @@
+A lan with a host, a proxy server and a router. Configure iptables to only 
+allow http and https through proxy and configure the proxy to use 
+authentication of the clients. 
+
+Install proxy squid (apt install squid) from proxy server.
