@@ -12,9 +12,10 @@ reachable and all can reach the Internet.
 
 - r1 and r2 have to be the default gateways for "lan1" and "lan2",
   respectively. They have to have a default route towards r0 and
-  static routes to reach lan1 or lan2.
+  static routes to reach lan1 or lan2. To set up static routes you can
+  use the ip route command (man ip-route).
 
 - the DNS server can be the server used by the host machine (this has
-  to be set in all the pcs of the lab)
+  to be set in all the pcs of the lab) or 8.8.8.8
 
 - the PCs can be configured as you prefer
