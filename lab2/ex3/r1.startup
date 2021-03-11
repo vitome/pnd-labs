@@ -1,3 +1,5 @@
-
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-apt install -y dibbler-server radvd
+dpkg -i /shared/*.deb
+apt install -yf dnsmasq 
+
+
