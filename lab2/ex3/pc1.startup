@@ -1,1 +1,4 @@
 umount /etc/resolv.conf
+#dpkg -i /shared/dibbler-client*.deb
+#apt install -y dibbler-client
+

@@ -14,6 +14,7 @@ and to properly set up the pc configurations.
   info via stateless DHCPv6
 
 - pc1 has to use dibbler-client
+  -- you can install it using dpkg -i /shared/dibbler-client*
 
 - pc2 has to use dhclient 
 
