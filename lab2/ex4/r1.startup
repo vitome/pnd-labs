@@ -1,2 +1,4 @@
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-apt install -y dibbler-client dibbler-server radvd
+umount /etc/resolv.conf
+dpkg -i --force-confold /shared/*.deb
+

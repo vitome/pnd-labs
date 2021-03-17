@@ -1,5 +1,7 @@
 
 echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-apt install -y dibbler-server radvd
+dpkg -i --force-confold /shared/dibbler-server*.deb /shared/radvd*.deb
+apt install -fy dibbler-server radvd
+sleep 1
 dibbler-server start
 radvd -m logfile -l /var/log/radvd.log
