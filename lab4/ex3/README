@@ -1,11 +1,11 @@
 An internal lan with some hosts (pc1 192.168.100.10, 2001:db8:cafe:1::10),
 a DMZ (203.0.113.0/24, 2001:db8:cafe:2::/64) with two servers,
-a router (192.168.100.1, 2001:db8:cafe:1, 203.0.113.1, 2001:db8:cafe:2::1,
+a router (192.168.100.1, 2001:db8:cafe:1::1, 203.0.113.1, 2001:db8:cafe:2::1,
   198.51.100.29/24, 2001:db8:beef:1::29/64).
 
 In the DMZ you've got 
-  one Web server (203.0.113.80, 2001:db8:cafe:2:80) on TCP ports 80 and 443,
-  and one mail server (203.0.113.25, 2001:db8:cafe:2:25) on TCP port 25.
+  one Web server (203.0.113.80, 2001:db8:cafe:2::80) on TCP ports 80 and 443,
+  and one mail server (203.0.113.25, 2001:db8:cafe:2::25) on TCP port 25.
 
 Your security policy is as follows:
 1.Your internal pcs may freely access any Web service, anywhere, on ports
@@ -18,8 +18,12 @@ Your security policy is as follows:
   DMZ can initiate connections anywhere else.
 
 3.Internal users can access the Web servers and mail servers in DMZ via SSH,
-  too. They can alsouse SSH to hosts on the Internet. However, hosts in
-  DMZ can only be contacted on port 22 by hosts in the internal lan.
+  too. They can also use SSH to reach any host on the Internet. However, 
+  hosts in DMZ can only be contacted on port 22 by hosts in the internal
+  lan.
+
+4.You can test your policy from the isp machine or placing the host machine
+  into the 'external' network (using the connect-lab.sh script).
 
 NOTE: if you obtain the error "Table does not exist (do you need 
 to insmod?)" issue the following command in the host machine
