@@ -1,1 +1,3 @@
-apt-get install -y libpcap-dev libssl-dev libnetfilter-queue-dev
+dpkg -i /shared/lib*.deb
+
+
