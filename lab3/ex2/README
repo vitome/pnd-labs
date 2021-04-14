@@ -1,10 +1,14 @@
 A lan with a host, a server, a router and the attacker machine.
-In the attacker machine you have to install ettercap and perform
-a MITM attack. Ettercap does this with the ARP poisoning
-This must be done with the --privileged option of kathara lstart (a bit rough...).
+In the attacker machine you have to install bettercap and perform
+a MITM attack. Bettercap does this with the ARP poisoning
 
-- Set up the links as for ex1, so that the victim machine can be the hosting box
+- You can set up the links as for ex1, so that one of the victim
+  machines can also be the hosting box
 
-- Verify the arp poisoning is effective
+- Unzip bettercap in a1 and realize the ARP poisoning
 
-- Try to use the filter for images already in the a1 folder to alter the image
+- Verify the arp poisoning is effective (capture the packets with
+  wireshark -> beware to the ARP packets!)
+
+- Try to use inject the http-proxy-pwned.js javascript for altering
+  HTTP responses coming from the webserver (see/use caplet proxyspoof.cap)
