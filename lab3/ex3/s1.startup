@@ -1,7 +1,8 @@
+echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 ip addr add 2001:db8:fede:1::80/64 dev eth0
 ip -6 route add default fe80::1/64 dev eth0
 
-apt update
-apt install -y php  libapache2-mod-php
+dpkg -i --force-confold /var/cache/apt/archives/*.deb
+
 /etc/init.d/apache2 start
 

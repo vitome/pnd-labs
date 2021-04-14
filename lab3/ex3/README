@@ -1,4 +1,8 @@
-A lan with a host, a server and a router. Compile the thc toolkit and
-play with the tools.
+A lan with a host, a server, an attacker and a router. Compile
+the thc toolkit in a1 and play with the tools.
+
+To compile thc in a1, simply
+root@a1:/thc-ipv6-3.6# make
+
 If you join the network from the hosting box, you can also monitor
 the traffic with wireshark.
