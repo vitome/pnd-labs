@@ -1,4 +1,4 @@
 ip addr add fd00:cafe:0:2::100/64 dev eth0
 ip route add default via fd00:cafe:0:2::1
 
-apt install -y ipsec-tools racoon
+dpkg -i /shared/*.deb
