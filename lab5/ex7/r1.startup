@@ -1,0 +1,6 @@
+ip addr add 100.60.0.2/16 dev eth0
+ip addr add 192.168.1.1/24 dev eth1
+ip route add default via 100.60.0.1
+
+dpkg -i --force-confold /shared/strongswan* /shared/libdbus-glib-1-2* /shared/libnm-glib-vpn1* /shared/libnm-util2* /shared/libstrongswan*
+apt install -f
