@@ -1,4 +1,9 @@
 #!/bin/bash
+if [ $# -eq 0 ]
+then
+   echo "ERROR: usage $0 IPADDR/NETMASK [NETWORK_NAME]"
+   exit 0
+fi
 echo "setting up host veth"
 
 sudo ip link del veth1 type veth
@@ -8,12 +13,13 @@ sudo ip addr add $1 dev veth0
 if [ -z "$2" ]
 then
    echo "Network name not provided: assume only one lan exists..."
-   bridge="$(docker network ls | grep -o '^[a-z0-9]*')"
+   bridge="$(docker network ls | grep -e "kathara_user." | grep -o '^[a-z0-9]*' | head -n 1)"
 else
-   bridge="$(docker network ls | grep $2 | grep -o '^[a-z0-9]*')"
+   bridge="$(docker network ls | grep -e "kathara_user.*_$2" | grep -o '^[a-z0-9]*')"
 fi
 
-echo "\n attaching veth1 to bridge: kt-${bridge}"
+echo
+echo "attaching veth1 to lan $2, bridge: kt-${bridge}"
 
 sudo ip link set veth1 master kt-${bridge}
 
