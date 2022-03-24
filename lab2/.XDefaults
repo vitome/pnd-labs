@@ -1,0 +1,4 @@
+XTerm*faceName: Ubuntu Mono:pixelsize=20
+Xterm*dynamicColors: true
+xterm*Background:               NavajoWhite1
+xterm*Foreground:               DarkBlue
