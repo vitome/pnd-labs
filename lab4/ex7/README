@@ -1,0 +1,8 @@
+You have to make fw1 to act as a transparent firewall.
+Both pc1 and pc2 have a ftp server running. With router r1 you
+can reach both of them. Regulate the access to the pcs
+with iptables.
+
+NOTE: ensure you run modprobe nf_conntrack_ftp to use the RELATED
+status in the kathara host.
+
