@@ -1,5 +1,4 @@
-echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
-apt install -y busybox udhcpd -o Dpkg::Options::="--force-confold" 
+dpkg --force-confold -i /var/cache/apt/archives/*.deb
 
 ip addr add 192.168.10.17/29 dev eth0
 
