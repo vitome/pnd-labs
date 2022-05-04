@@ -1,0 +1,1 @@
+openvpn --genkey --secret secret.key
