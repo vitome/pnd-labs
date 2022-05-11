@@ -5,6 +5,3 @@ ip route add default via 100.90.0.1
 dpkg -i --force-confold /shared/strongswan* /shared/libdbus-glib-1-2* /shared/libnm-glib-vpn1* /shared/libnm-util2* /shared/libstrongswan*
 apt install -f
 cp shared/charon-logging.conf /etc/strongswan.d/
-/usr/lib/ipsec/charon 
-
-
