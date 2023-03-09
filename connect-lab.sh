@@ -13,9 +13,9 @@ sudo ip addr add $1 dev veth0
 if [ -z "$2" ]
 then
    echo "Network name not provided: assume only one lan exists..."
-   bridge="$(docker network ls | grep -e 'kathara_.*' | grep -o '^[a-z0-9]*' | head -n 1)"
+   bridge="$(sudo docker network ls | grep -e 'kathara_.*' | grep -o '^[a-z0-9]*' | head -n 1)"
 else
-   bridge="$(docker network ls | grep -e "kathara_${USER}.*_$2" | grep -o '^[a-z0-9]* ')"
+   bridge="$(sudo docker network ls | grep -e "kathara_${USER}.*_$2" | grep -o '^[a-z0-9]* ')"
 fi
 
 echo
