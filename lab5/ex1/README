@@ -13,7 +13,7 @@ The two lans have the following IPv4 scheme:
 ┌───eth1──┐               ┌───eth1──┐
 │         │     wan       │         │
 │   R1   eth0───────────eth0  R2    │
-│         │ 100.60.10.0/16│         │
+│         │ 100.64.10.0/16│         │
 └─────────┘               └─────────┘
      .1                        .2
 
