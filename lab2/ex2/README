@@ -7,17 +7,18 @@ in the lab.conf OR in a priviledged container.
 
 - All the pcs of the topology must have GUA addresses.
 
-- pc1, pc2 and pc3 have to use standard address.
-
 - pc1 has to use the default configuration for the Interface ID
 
 - pc2 has to use a Random Interface ID
 
-- pc3 has to use EUI-64
+- pc3 has to use stable privacy extension, setting the stable_secret
 
-- pc4 has to use the privacy extension in order to make it use
-  temporary addresses. Set up a short lifetime in order to see multiple 
-  addresses. 
+- pc4 has to use the EUI-64 and use the temporary addresses. Set up
+  a short lifetime in order to see multiple addresses. 
 
 - router r1 is already set up. You only have to turn on the radvd server
-  to capture the router advertisement packets. See the r1.startup file.
+  to capture the router advertisement packets using tcpdump.
+  See the r1.startup and the /etc/radvd.conf file.
+
+Remember to check the list of all the possible IPv6 settings in:
+https://www.kernel.org/doc/Documentation/networking/ip-sysctl.txt

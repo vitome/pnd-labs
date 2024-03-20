@@ -1,4 +1,4 @@
-One router with two lan, both with 2 pcs. The assignment is: to
+One router with two lans, both with 2 pcs. The assignment is: to
 configure the topology to use static IPv6 addresses. 
 
 You have to provide static GUA addresses to the machines in the topology.
@@ -11,3 +11,7 @@ You have to provide static GUA addresses to the machines in the topology.
 
 - the router r1 has always 1 in the Interface ID of its own address,
   both link-local and GUA
+
+Configure pc1 and pc4 using the interfaces file
+Configure pc2 using the ip command
+Configure pc3 using the ifconfig command
