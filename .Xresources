@@ -1,0 +1,6 @@
+
+Xcursor.theme: Breeze_Snow
+Xcursor.size: 22
+! Use a truetype font and size.
+xterm*faceName: Monospace
+xterm*faceSize: 12
