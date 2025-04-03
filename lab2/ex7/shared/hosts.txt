@@ -1,0 +1,4 @@
+pc1  2001:db8:f:1:216:3eff:feee:1	00:16:3e:ee:00:01 
+pc2  2001:db8:f:1:216:3eff:feee:2	00:16:3e:ee:00:02 
+pc3  2001:db8:f:1:216:3eff:feee:3	00:16:3e:ee:00:03  # attacker scapy
+r1  2001:db8:f:1::1			00:16:3e:ee:00:00

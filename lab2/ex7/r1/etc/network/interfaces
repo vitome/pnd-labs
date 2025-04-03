@@ -1,0 +1,5 @@
+iface eth0 inet6 static
+  address 2001:db8:f:1::1
+  netmask 64
+  dad-attempts 0
+

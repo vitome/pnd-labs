@@ -1,0 +1,10 @@
+One router with 3 pcs in the same lan. The assignment is: to follow
+the RIPE NCC IPv6 security slides.
+
+After running radvd in r1 check that all the pcs of the topology
+have GUA addresses.
+
+In pc1 and pc2, copy shared/thc.zip and shared/master.zip in the home,
+unzip them and run make install inside the extracted directories. 
+
+In pc3 there is scapy.

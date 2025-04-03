@@ -1,0 +1,5 @@
+ip link set addr 00:16:3e:ee:00:00 eth0
+dpkg -i radvd_1%3a2.15-2_amd64.deb
+ifup eth0
+#radvd -m logfile -l /var/log/radvd.log
+

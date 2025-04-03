@@ -1,0 +1,4 @@
+sysctl -w net.ipv6.conf.eth0.forwarding=0
+ip link set address 00:16:3e:ee:00:03 eth0
+PS1="$(pwd) $(hostname) $(id -un) "
+export PS1="$(pwd) $(hostname) $(id -un) "
