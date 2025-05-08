@@ -1,0 +1,2 @@
+sysctl -w net.ipv6.conf.eth0.forwarding=0
+
