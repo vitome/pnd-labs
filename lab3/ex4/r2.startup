@@ -1,1 +1,6 @@
 dpkg -i /shared/lib*.deb
+ip addr add fe80::100/64 dev eth0
+ip route add 2001:db8:fede:1::0/64 dev eth0 via fe80::99
+ip addr add fe80::100/64 dev eth1
+ip route add 2001:db8:fede:2::0/64 dev eth1 
+
